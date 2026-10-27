@@ -1,13 +1,13 @@
 # Task 1: Fast 100,000+ News Articles Extractor
 
-High-throughput, asynchronous news article extraction pipeline capable of collecting **100,000+ (1 Lakh+) clean articles** with complete metadata (`title`, `url`, `timestamp`, `author`, `domain`) in **under 10 minutes**.
+High-throughput, asynchronous news article extraction pipeline capable of collecting **100,000+ (1 Lakh+) clean articles** with complete metadata (`title`, `url`, `timestamp`, `author`, `domain`, `content`) in **under 10 minutes**.
 
 ---
 
 ## 📁 Folder Contents
 
 - `articles_100k.csv`: The extracted dataset containing **100,037 unique news articles** (38 MB).
-- `fast_extract_100k.py`: The asynchronous Python extraction engine.
+- `fast_extract_100k.py`: The asynchronous Python extraction engine (supports `content` extraction).
 - `news_sources_1000.csv`: The list of 1,000 news publisher domains used as sources.
 - `README.md`: This documentation.
 
@@ -55,6 +55,7 @@ python Task_1/fast_extract_100k.py
    - `title`: Clean headline text.
    - `timestamp`: Standardized ISO-8601 publication date (e.g., `2026-10-20T23:41:06Z`).
    - `author`: Article author or publisher byline.
+   - `content`: Clean article text / summary description.
 4. **Real-Time Deduplication**:
    - Each URL is checked against an in-memory hash set before writing. Duplicate stories are skipped automatically.
 5. **Incremental Disk Writes**:

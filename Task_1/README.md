@@ -1,4 +1,4 @@
-# Task 1: Fast 100,000+ News Articles Extractor
+# Task 1: Fast 100,000+ News Articles Scrapper
 
 High-throughput, asynchronous news article extraction pipeline capable of collecting **100,000+ (1 Lakh+) clean articles** with complete metadata (`title`, `url`, `timestamp`, `author`, `domain`, `content`) in **under 10 minutes**.
 
@@ -24,7 +24,7 @@ If your terminal is in `Task_1`:
 source ../.scrapper/bin/activate
 
 # 2. Run the extractor
-python fast_extract_100k.py
+python fast_scrapper.py
 ```
 
 ### Option B: Running from the project root (`AI & ML/`)
@@ -36,7 +36,7 @@ If your terminal is in the main project directory:
 source .scrapper/bin/activate
 
 # 2. Run the extractor
-python Task_1/fast_extract_100k.py
+python Task_1/fast_scrapper.py
 ```
 
 *(Note: If you are not using the `.scrapper` virtual environment, simply ensure dependencies are installed via `pip install aiohttp feedparser pandas`)*

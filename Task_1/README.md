@@ -1,4 +1,4 @@
-# Task 1: Fast 100,000+ News Articles Scrapper
+# Task 1: 100,000+ News Articles Scrapper
 
 High-throughput, asynchronous news article extraction pipeline capable of collecting **100,000+ (1 Lakh+) clean articles** with complete metadata (`title`, `url`, `timestamp`, `author`, `domain`, `content`) in **under 10 minutes**.
 
